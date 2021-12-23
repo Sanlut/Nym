@@ -17,10 +17,14 @@ sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils
 sudo apt install xrdp xorgxrdp
 ```
 ##### 4. Настраиваете RDP на своей винде:
-
+4.1. Ищете через пуск
 ![Ищете прогу](https://github.com/Sanlut/Nym/blob/main/999.png)
 
-##### 5. 
+4.2. Запускаете, прописываете ip впски и пользователя `root`. Если нод несколько, то можете сохранить ярлык отдельный для каждой ноды
+
+![Прописываем параметры и запускаем](https://github.com/Sanlut/Nym/blob/main/rdp.png)
+
+##### 5. Настраиваете Ubuntu и кошелек, бондите ноду
 
 https://github.com/nymtech/nym/releases/tag/v0.12.0
 
