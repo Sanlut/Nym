@@ -129,7 +129,7 @@ systemctl daemon-reload
 systemctl start nym-mixnode
 ```
 
-6.9. Для просмотра работы ноды вводим
+Для просмотра работы ноды вводим
 
 ```
 journalctl -t nym-mixnode -f -n 500
