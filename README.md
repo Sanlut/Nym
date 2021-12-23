@@ -108,7 +108,46 @@ chmod 755 nym-mixnode
     Mix Port: 1789, Verloc port: 1790, Http Port: 8000
 
     You are bonding to wallet address: nymхххххххХХХХхХХХхххххх
+    
+6.7. Настраиваем сервис ноды. Команда состоит из 8 строк. Вводить нужно все 8 строк сразу, одной командой. Не забудьте указать ИМЯНОДЫ
 
-##### 7. Возвращаемся в бубунту через RDP, где у нас кошель, и там бондим эту ноду, введя в соответствующие поля все вот это, что выше вам дали
+```
+echo "[Unit]
+Description=Nym Mixnode
+[Service]
+ExecStart=/root/nym/nym-mixnode run --id ИМЯНОДЫ
+Restart=always
+RestartSec=26
+StartLimitBurst=0
+[Install]" > /etc/systemd/system/nym-mixnode.service
+```
+6.8. Запускаем ноду
+```
+systemctl daemon-reload
+```
+```
+systemctl start nym-mixnode
+```
+
+6.9. Для просмотра работы ноды вводим
+
+```
+journalctl -t nym-mixnode -f -n 500
+```
+Остановка ноды 
+```
+systemctl stop nym-mixnode
+```
+Закуск ноды
+```
+systemctl start nym-mixnode
+```
+Перезапуск ноды
+```
+systemctl restart nym-mixnode
+```
+
+
+##### 7. Возвращаемся в бубунту через RDP, где у нас кошель, и там бондим эту ноду, введя в соответствующие поля все, что сохранили в блокнот из п. 6.6.
 
 
