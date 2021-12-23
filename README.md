@@ -151,27 +151,27 @@ systemctl restart nym-mixnode
 wget -O nym_ulimit.sh https://api.nodes.guru/nym_ulimit.sh && chmod +x nym_ulimit.sh && ./nym_ulimit.sh
 
 6.10. Открываем порты:
-# check if you have ufw installed 
+check if you have ufw installed 
 ```
 ufw version 
 ```
-# if it is not installed, install with
+if it is not installed, install with
 ```
 sudo apt install ufw -y
 ```
-# enable ufw 
+enable ufw 
 ```
 sudo ufw enable
 ```
-# check the status of the firewall 
+check the status of the firewall 
 ```
 sudo ufw status
 ```
-# открываем порты
+открываем порты
 ```
 sudo ufw allow 1789,1790,8000,3389,22,80,443/tcp
 ```
-# check the status of the firewall
+check the status of the firewall
 ```
 sudo ufw status
 ```
