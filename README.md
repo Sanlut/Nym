@@ -49,7 +49,7 @@ https://github.com/nymtech/nym/releases/tag/v0.12.0
 
 ![](https://github.com/Sanlut/Nym/blob/main/term1.png)
 
-5.4. Вводим поочередно след. команды и запускаем так кошель
+5.4. Вводим поочередно следующие команды и запускаем так кошель
 
 ```
 chmod a+x ~/Downloads/nym-wallet_0.12.0_ubuntu_20.04_amd64.AppImage
@@ -60,7 +60,7 @@ chmod a+x ~/Downloads/nym-wallet_0.12.0_ubuntu_20.04_amd64.AppImage
 
 ![](https://github.com/Sanlut/Nym/blob/main/term2.png)
 
-Кошелек запустился. Поздравляю - вы охуевший хацкер.
+Кошелек запустился. Поздравляю - вы охуевший хацкер.\в
 В кошеле все понятно. Разберетесь без инструкции. Тут пока все. Возвращаемся в PuTTY и подымаем саму ноду. Потом вернемся сюда в кошель, чтоб забондить ее.
 
 ##### 6.	Подымаете ноду в PuTTY
